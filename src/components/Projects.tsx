@@ -14,7 +14,7 @@ const projects = [
   {
     title: 'Ticket Booking Tourism Website',
     description: 'Safar Bots is a chatbot-based ticket booking platform which offers users seamless travel experiences and guidance with interactive AI assistance.',
-    image: '/proj2.jpg',
+    image: '/Proj2.jpg',
     tags: ['TailwindCSS', 'Razorpay', 'Firebase'],
     github: 'https://github.com/safarBots/Varanasi/tree/main',
     demo: 'https://varanasi-3.onrender.com'
