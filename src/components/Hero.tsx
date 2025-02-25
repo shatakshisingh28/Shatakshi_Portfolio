@@ -49,7 +49,7 @@ function Hero() {
 
           {/* Download Resume Button */}
           <motion.a
-            href="img/ShatakshiSingh_InternshalaResume (2).pdf"
+            href="/ShatakshiSingh_InternshalaResume (2).pdf"
             download
             className="group relative inline-flex items-center px-8 py-3 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-medium shadow-lg transition-transform hover:scale-110"
             whileHover={{ scale: 1.05 }}
@@ -81,7 +81,7 @@ function Hero() {
               transition={{ duration: 0.3 }}
             >
               <img
-                src="img/WhatsApp Image 2025-02-25 at 18.24.55.jpeg"
+                src="/WhatsApp Image 2025-02-25 at 18.24.55.jpeg"
                 alt="Shatakshi Singh"
                 className="w-full h-full object-cover"
               />
