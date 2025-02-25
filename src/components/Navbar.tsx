@@ -24,7 +24,7 @@ function Navbar() {
             className="text-xl font-poppins font-bold"
             whileHover={{ scale: 1.05 }}
           >
-            <img src="img/s_OZy_icon.ico" alt="Logo" className="h-12" />
+            <img src="/s_OZy_icon.ico" alt="Logo" className="h-12" />
           </motion.span>
 
           <div className="hidden md:flex space-x-8">
