@@ -2,15 +2,31 @@ import { useRef } from 'react';
 import * as THREE from 'three';
 import { useFrame, Canvas } from '@react-three/fiber';
 import { Points, PointMaterial } from '@react-three/drei';
-import { inSphere } from 'maath/random';
+
+// Create our own sphere generation function since maath/random is causing issues
+function generateSpherePoints(count: number, radius: number): Float32Array {
+  const positions = new Float32Array(count * 3);
+  
+  for (let i = 0; i < count; i++) {
+    const i3 = i * 3;
+    const u = Math.random();
+    const v = Math.random();
+    const theta = 2 * Math.PI * u;
+    const phi = Math.acos(2 * v - 1);
+    const r = radius * Math.cbrt(Math.random()); // For uniform distribution within sphere
+    
+    positions[i3] = r * Math.sin(phi) * Math.cos(theta);
+    positions[i3 + 1] = r * Math.sin(phi) * Math.sin(theta);
+    positions[i3 + 2] = r * Math.cos(phi);
+  }
+  
+  return positions;
+}
 
 function ParticleField() {
   const ref = useRef<THREE.Points>(null);
-  const sphere = inSphere(new Float32Array(5000), { radius: 1.5 });
-
-
-
-
+  const sphere = generateSpherePoints(5000, 1.5);
+  
   useFrame((state) => {
     if (!ref.current) return;
     const time = state.clock.getElapsedTime();
