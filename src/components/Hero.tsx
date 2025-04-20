@@ -81,7 +81,7 @@ function Hero() {
               transition={{ duration: 0.3 }}
             >
               <img
-                src="/WhatsApp Image 2025-02-25 at 18.24.55.jpeg"
+                src="/profile.jpg"
                 alt="Shatakshi Singh"
                 className="w-full h-full object-cover"
               />
