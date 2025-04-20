@@ -69,9 +69,7 @@ function Footer() {
             <div className="grid grid-cols-2 gap-x-4 gap-y-1">
               <a href="#home" className="text-sm hover:text-indigo-400  transition-colors">Home</a>
               <a href="#projects" className="text-sm hover:text-indigo-400  transition-colors">Projects</a>
-              <a href="#about" className="text-sm hover:text-indigo-400  transition-colors">About</a>
-              <a href="#skills" className="text-sm hover:text-indigo-400  transition-colors">Skills</a>
-              <a href="#experience" className="text-sm hover:text-indigo-400  transition-colors">Experience</a>
+              <a href="#resume" className="text-sm hover:text-indigo-400  transition-colors">Skills</a>
               <a href="#contact" className="text-sm hover:text-indigo-400 transition-colors">Contact</a>
             </div>
           </div>
