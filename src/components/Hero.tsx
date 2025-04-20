@@ -81,7 +81,7 @@ function Hero() {
               transition={{ duration: 0.3 }}
             >
               <img
-                src="/profile.jpg"
+                src="/profile.webp"
                 alt="Shatakshi Singh"
                 className="w-full h-full object-cover"
               />
