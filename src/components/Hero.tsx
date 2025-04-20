@@ -15,10 +15,7 @@ function Hero() {
           className="text-left"
         >
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-poppins font-bold mb-4 relative">
-            {/* Shadow layer underneath */}
-            <span className="absolute top-0.5 left-0.5 text-black/30 blur-sm z-0">
-              Shatakshi Singh
-            </span>
+
             {/* Main text with gradient */}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-white via-cyan-100 to-indigo-100 relative z-10">
               Shatakshi Singh
