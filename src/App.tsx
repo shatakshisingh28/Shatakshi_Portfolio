@@ -13,20 +13,20 @@ import Footer from './components/Footer';
 function App() {
   const [theme, setTheme] = useState<'light' | 'dark'>('dark');
   const [scrollProgress, setScrollProgress] = useState(0);
-
+  
   useEffect(() => {
     document.documentElement.classList.add('dark');
-
+    
     const handleScroll = () => {
       const totalScroll = document.documentElement.scrollHeight - window.innerHeight;
       const currentProgress = (window.scrollY / totalScroll) * 100;
       setScrollProgress(currentProgress);
     };
-
+    
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
+  
   const toggleTheme = () => {
     setTheme(prev => {
       const newTheme = prev === 'light' ? 'dark' : 'light';
@@ -34,7 +34,7 @@ function App() {
       return newTheme;
     });
   };
-
+  
   return (
     <div className="font-inter text-gray-800 dark:text-gray-200 bg-white dark:bg-dark min-h-screen">
       <Background />
@@ -61,7 +61,8 @@ function App() {
         </AnimatePresence>
       </button> */}
 
-      <div className="fixed left-4 top-1/2 -translate-y-1/2 space-y-4 z-50">
+      {/* Social buttons - Hidden on small screens */}
+      <div className="fixed left-4 top-1/2 -translate-y-1/2 space-y-4 z-50 hidden md:block">
         <SocialButton href="https://github.com/shatakshisingh28" icon={<Github />} label="GitHub" />
         <SocialButton href="https://www.linkedin.com/in/shatakshi-singh-256625219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" icon={<Linkedin />} label="LinkedIn" />
         <SocialButton href="https://x.com/i/flow/login?redirect_after_login=%2FShatakshis28" icon={<Twitter />} label="Twitter" />
