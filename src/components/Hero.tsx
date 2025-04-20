@@ -5,7 +5,7 @@ import { TypewriterText } from './TypewriterText';
 
 function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center px-6 md:px-36 text-center md:text-left pt-24 sm:pt-16">
+    <section id="home" className="relative min-h-screen flex items-center justify-center px-6 md:px-36 text-center md:text-left pt-16 sm:pt-10">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Left Section - Text Content */}
         <motion.div
@@ -14,7 +14,7 @@ function Hero() {
           transition={{ duration: 0.8 }}
           className="text-left"
         >
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-poppins font-bold mb-4 relative">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-poppins font-bold mb-4 relative">
             {/* Shadow layer underneath */}
             <span className="absolute top-0.5 left-0.5 text-black/30 blur-sm z-0">
               Shatakshi Singh
