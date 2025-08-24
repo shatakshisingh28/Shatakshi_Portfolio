@@ -40,7 +40,7 @@ function Hero() {
           </motion.p>
           {/* Download Resume Button */}
           <motion.a
-            href="/ShatakshiSingh_InternshalaResume (2).pdf"
+            href="/RESUME.pdf"
             download
             className="group relative inline-flex items-center px-6 sm:px-8 py-2 sm:py-3 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-medium shadow-lg transition-transform hover:scale-110"
             whileHover={{ scale: 1.05 }}
